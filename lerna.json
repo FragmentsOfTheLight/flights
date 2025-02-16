@@ -1,7 +1,6 @@
 {
   "version": "0.1.53",
   "npmClient": "npm",
-  "useWorkspaces": true,
   "command": {
     "publish": {
       "ignoreChanges": ["ignored-file", "*.md"],
