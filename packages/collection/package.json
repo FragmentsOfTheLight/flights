@@ -1,6 +1,6 @@
 {
   "name": "@lights/collection",
-  "version": "0.1.53",
+  "version": "0.1.1",
   "description": "LighTS model-collection module",
   "author": "Rasul Alizadeh <mohammadr.alizadeh@live.com>",
   "homepage": "https://github.com/fragmentsofthelight/lights/collection#readme",
@@ -25,8 +25,8 @@
     "url": "https://github.com/fragmentsofthelight/lights/issues"
   },
   "dependencies": {
-    "@lights/container": "^0.1.53",
-    "@lights/core": "^0.1.53",
+    "@lights/container": "^0.1.1",
+    "@lights/core": "^0.1.1",
     "pluralize": "^8.0.0"
   },
   "devDependencies": {

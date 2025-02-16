@@ -1,6 +1,6 @@
 {
   "name": "@lights/framework",
-  "version": "0.1.53",
+  "version": "0.1.1",
   "description": "LighTS framework",
   "author": "Rasul Alizadeh <mohammadr.alizadeh@live.com>",
   "homepage": "https://github.com/fragmentsofthelight/lights/collection#readme",
@@ -24,7 +24,7 @@
     "url": "https://github.com/fragmentsofthelight/lights/issues"
   },
   "dependencies": {
-    "@lights/core": "^0.1.53"
+    "@lights/core": "^0.1.1"
   },
   "gitHead": "774c824db9aa7410f878aa23a2c83bf4dfb7153d"
 }

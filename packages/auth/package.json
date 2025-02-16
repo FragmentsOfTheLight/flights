@@ -1,6 +1,6 @@
 {
   "name": "@lights/auth",
-  "version": "0.1.53",
+  "version": "0.1.1",
   "description": "LighTS authentication package",
   "author": "Rasul Alizadeh <mohammadr.alizadeh@live.com>",
   "homepage": "https://github.com/fragmentsofthelight/lights#readme",
@@ -25,9 +25,9 @@
     "url": "https://github.com/fragmentsofthelight/lights/issues"
   },
   "dependencies": {
-    "@lights/collection": "^0.1.53",
-    "@lights/core": "^0.1.53",
-    "@lights/data": "^0.1.53",
+    "@lights/collection": "^0.1.1",
+    "@lights/core": "^0.1.1",
+    "@lights/data": "^0.1.1",
     "axios": "^1.7.9"
   },
   "gitHead": "774c824db9aa7410f878aa23a2c83bf4dfb7153d"

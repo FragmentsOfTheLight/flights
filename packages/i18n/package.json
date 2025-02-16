@@ -1,6 +1,6 @@
 {
   "name": "@lights/i18n",
-  "version": "0.1.53",
+  "version": "0.1.1",
   "description": "LighTS multilanguage support library",
   "author": "Rasul Alizadeh <mohammadr.alizadeh@live.com>",
   "homepage": "https://github.com/fragmentsofthelight/lights#readme",
@@ -24,9 +24,9 @@
     "url": "https://github.com/fragmentsofthelight/lights/issues"
   },
   "dependencies": {
-    "@lights/core": "^0.1.53",
-    "@lights/data": "^0.1.53",
-    "@lights/storage": "^0.1.53"
+    "@lights/core": "^0.1.1",
+    "@lights/data": "^0.1.1",
+    "@lights/storage": "^0.1.1"
   },
   "gitHead": "774c824db9aa7410f878aa23a2c83bf4dfb7153d"
 }
