@@ -1,0 +1,20 @@
+{
+  "version": "0.1.53",
+  "npmClient": "npm",
+  "useWorkspaces": true,
+  "command": {
+    "publish": {
+      "ignoreChanges": ["ignored-file", "*.md"],
+      "message": "chore(release): publish %s",
+      "allowBranch": ["main", "dev"]
+    },
+    "version": {
+      "push": true
+    },
+    "bootstrap": {
+      "ignore": "component-*",
+      "npmClientArgs": ["--no-package-lock"]
+    }
+  },
+  "packages": ["packages/*"]
+}

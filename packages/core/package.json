@@ -1,0 +1,39 @@
+{
+  "name": "@lights/core",
+  "version": "0.1.53",
+  "description": "LighTS core packages and patterns",
+  "author": "Rasul Alizadeh <mohammadr.alizadeh@live.com>",
+  "homepage": "https://github.com/fragmentsofthelight/lights#readme",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "directories": {
+    "src": "src",
+    "test": "__tests__"
+  },
+  "files": [
+    "src",
+    "vue.ts",
+    "contracts.ts",
+    "metadata.ts",
+    "index.ts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fragmentsofthelight/lights.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/fragmentsofthelight/lights/issues"
+  },
+  "dependencies": {
+    "js-yaml": "^4.0.0",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.0",
+    "reflect-metadata": "^0.1.13"
+  },
+  "gitHead": "774c824db9aa7410f878aa23a2c83bf4dfb7153d"
+}

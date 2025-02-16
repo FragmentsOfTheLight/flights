@@ -1,0 +1,1 @@
+export default {"connection":"mysql","database":"admin"}

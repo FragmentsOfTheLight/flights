@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "noUnusedLocals": false,
+    "importHelpers": true,
+    "removeComments": true,
+    "noLib": false
+  },
+  "exclude": ["node_modules", "tools", "dist", "examples", "**/*spec.ts"]
+}
