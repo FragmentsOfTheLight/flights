@@ -4,7 +4,7 @@ import {
   Constructor,
   copyAvailableProps,
   RepositoryResultMetaPage,
-} from '@lights/core'
+} from '@flights/core'
 import { ModelState } from './enums'
 
 export class Collection<T extends { [key: string]: any }> {

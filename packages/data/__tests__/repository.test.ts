@@ -4,7 +4,7 @@ import { RestApiRepository } from '../src/repository'
 import {
   RepositoryFilterOperator,
   RepositoryQueryOptions,
-} from '@lights/core/src/contracts'
+} from '@flights/core/src/contracts'
 
 describe('Repository', () => {
   interface User {

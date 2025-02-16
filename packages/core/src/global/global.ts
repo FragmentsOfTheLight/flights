@@ -36,7 +36,7 @@ try {
 export function rGlobal(): RGlobalScopeImp {
   try {
     if (global) {
-      console.log('lights: using global scope')
+      console.log('flights: using global scope')
       // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-ignore
       return global.rGlobalScope as RGlobalScopeImp
@@ -44,7 +44,7 @@ export function rGlobal(): RGlobalScopeImp {
   } catch (e) {}
   try {
     if (window) {
-      console.log('lights: using window scope')
+      console.log('flights: using window scope')
       // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-ignore
       return window.rGlobalScope as RGlobalScopeImp

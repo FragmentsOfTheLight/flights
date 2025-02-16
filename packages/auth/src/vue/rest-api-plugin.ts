@@ -1,6 +1,6 @@
 import { RestApiAuthenticator } from '../api-authenticator'
-import { Authenticator, StorageAdapter } from '@lights/core/src/contracts'
-import { LocalStorageAdapter } from '@lights/storage'
+import { Authenticator, StorageAdapter } from '@flights/core/src/contracts'
+import { LocalStorageAdapter } from '@flights/storage'
 
 export const authSymbol = Symbol()
 

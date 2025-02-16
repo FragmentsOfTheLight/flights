@@ -1,4 +1,4 @@
-import { Metadata, ModelValidationFunction } from '@lights/core/src/contracts'
+import { Metadata, ModelValidationFunction } from '@flights/core/src/contracts'
 
 export interface ValidationMetadataOptions {
   validator: ModelValidationFunction<any>

@@ -3,8 +3,8 @@ import {
   isUndefined,
   Constructor,
   ClassConstructorDecorator,
-} from '@lights/core'
-import { mergeClassMetadata } from '@lights/core/src/metadata'
+} from '@flights/core'
+import { mergeClassMetadata } from '@flights/core/src/metadata'
 import { MetadataKeyTypes, ModelState } from '../enums'
 import { ModelMetadataOptions, ModelMetadata } from '../metadata'
 import { lowerCase } from 'lodash'

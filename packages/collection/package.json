@@ -1,9 +1,9 @@
 {
-  "name": "@lights/collection",
+  "name": "@flights/collection",
   "version": "0.1.1",
-  "description": "LighTS model-collection module",
+  "description": "flights model-collection module",
   "author": "Rasul Alizadeh <mohammadr.alizadeh@live.com>",
-  "homepage": "https://github.com/fragmentsofthelight/lights/collection#readme",
+  "homepage": "https://github.com/fragmentsofthelight/flights/collection#readme",
   "license": "MIT",
   "main": "src/index.ts",
   "directories": {
@@ -16,17 +16,17 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fragmentsofthelight/lights.git"
+    "url": "git+https://github.com/fragmentsofthelight/flights.git"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
-    "url": "https://github.com/fragmentsofthelight/lights/issues"
+    "url": "https://github.com/fragmentsofthelight/flights/issues"
   },
   "dependencies": {
-    "@lights/container": "^0.1.1",
-    "@lights/core": "^0.1.1",
+    "@flights/container": "^0.1.1",
+    "@flights/core": "^0.1.1",
     "pluralize": "^8.0.0"
   },
   "devDependencies": {

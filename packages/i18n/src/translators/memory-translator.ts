@@ -1,9 +1,9 @@
 import { Translator } from '..'
-import { StorageAdapter } from '@lights/core/contracts'
+import { StorageAdapter } from '@flights/core/contracts'
 import { Clonable, ClonableMixin, CompositionMixin } from 'packages/core'
 import { TranslationModel } from '../translator.interface'
 import { TranslationKeyNotFoundError } from '../errors/translator.error'
-import { Serializer } from '@lights/core/contracts'
+import { Serializer } from '@flights/core/contracts'
 
 class MemoryTranslatorBase {}
 

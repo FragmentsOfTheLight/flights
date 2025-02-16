@@ -1,6 +1,6 @@
-import { StorageAdapter } from '@lights/core/contracts'
+import { StorageAdapter } from '@flights/core/contracts'
 import * as fs from 'fs'
-import { DecoratorBase } from '@lights/core'
+import { DecoratorBase } from '@flights/core'
 
 export class FileStorageAdapter implements StorageAdapter, DecoratorBase {
   read(path: string) {

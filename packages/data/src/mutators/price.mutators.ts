@@ -1,4 +1,4 @@
-import { Mutator } from '@lights/core/contracts'
+import { Mutator } from '@flights/core/contracts'
 
 export class PriceFormatMutator implements Mutator {
   mutate(digit: any): any {

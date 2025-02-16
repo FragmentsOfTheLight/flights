@@ -2,7 +2,7 @@
 
 import { Field, Model, Collection } from '../src'
 import { ModelManager } from '../src'
-import { RestApiRepository } from '@lights/data/src/repository'
+import { RestApiRepository } from '@flights/data/src/repository'
 import { Nested } from '../src/decorator/nested.decorators'
 
 @Model()

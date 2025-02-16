@@ -4,7 +4,7 @@ import {
   AuthResponse,
   CheckResponse,
   StorageAdapter,
-} from '@lights/core/contracts'
+} from '@flights/core/contracts'
 import axios, { AxiosInstance } from 'axios'
 import {
   AuthenticationFailError,

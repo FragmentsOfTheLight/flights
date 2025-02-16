@@ -1,6 +1,6 @@
 'use strict'
 
-import { ModelCast, ModelValidation } from '@lights/core/contracts'
+import { ModelCast, ModelValidation } from '@flights/core/contracts'
 import {
   Cast,
   Errors,

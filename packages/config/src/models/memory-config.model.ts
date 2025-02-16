@@ -1,5 +1,5 @@
-import { ClonableMixin, CompositionMixin } from '@lights/core'
-import { StorageAdapter } from '@lights/core/contracts'
+import { ClonableMixin, CompositionMixin } from '@flights/core'
+import { StorageAdapter } from '@flights/core/contracts'
 import { Config, ConfigModel, ConfigValue } from '../config.interface'
 import { ConfigKeyNotFoundError } from '../errors/config.error'
 

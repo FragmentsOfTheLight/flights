@@ -1,5 +1,5 @@
 import { Constructor } from '../mixin'
-import { ModelMetadataOptions } from '@lights/collection/src/metadata/model.metadata'
+import { ModelMetadataOptions } from '@flights/collection/src/metadata/model.metadata'
 
 /**
  * Allows behavior to be added to an individual object dynamically.

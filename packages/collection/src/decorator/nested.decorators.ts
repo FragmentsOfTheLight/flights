@@ -1,4 +1,4 @@
-import { mergePropertyMetadata } from '@lights/core/src/metadata'
+import { mergePropertyMetadata } from '@flights/core/src/metadata'
 import { MetadataKeyTypes } from '../enums'
 import { NestedMetadata, NestedMetadataOptions } from '../metadata'
 

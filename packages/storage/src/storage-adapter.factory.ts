@@ -1,5 +1,5 @@
-import { AdapterFactory } from '@lights/core'
-import { StorageAdapter } from '@lights/core/contracts'
+import { AdapterFactory } from '@flights/core'
+import { StorageAdapter } from '@flights/core/contracts'
 import {
   JsonStorageAdapter,
   JsStorageAdapter,

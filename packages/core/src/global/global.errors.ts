@@ -1,4 +1,4 @@
-import { BaseError, rGlobal, RGlobalScope } from '@lights/core'
+import { BaseError, rGlobal, RGlobalScope } from '@flights/core'
 
 export class GlobalError extends BaseError {
   constructor(m: string) {

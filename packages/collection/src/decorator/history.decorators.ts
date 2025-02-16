@@ -1,4 +1,4 @@
-import { mergeClassMetadata } from '@lights/core/src/metadata'
+import { mergeClassMetadata } from '@flights/core/src/metadata'
 import { MetadataKeyTypes } from '../enums/metadata.keys'
 import { ModelMetadata } from '../metadata/model.metadata'
 

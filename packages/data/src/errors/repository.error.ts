@@ -1,4 +1,4 @@
-import { BaseError, RepositoryResult } from '@lights/core'
+import { BaseError, RepositoryResult } from '@flights/core'
 import { AxiosResponse } from 'axios'
 
 export class RepositoryError<T> extends BaseError {

@@ -1,9 +1,9 @@
 {
-  "name": "@lights/framework",
+  "name": "@flights/framework",
   "version": "0.1.1",
-  "description": "LighTS framework",
+  "description": "flights framework",
   "author": "Rasul Alizadeh <mohammadr.alizadeh@live.com>",
-  "homepage": "https://github.com/fragmentsofthelight/lights/collection#readme",
+  "homepage": "https://github.com/fragmentsofthelight/flights/collection#readme",
   "license": "MIT",
   "main": "src/index.ts",
   "directories": {
@@ -15,16 +15,16 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fragmentsofthelight/lights.git"
+    "url": "git+https://github.com/fragmentsofthelight/flights.git"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
-    "url": "https://github.com/fragmentsofthelight/lights/issues"
+    "url": "https://github.com/fragmentsofthelight/flights/issues"
   },
   "dependencies": {
-    "@lights/core": "^0.1.1"
+    "@flights/core": "^0.1.1"
   },
   "gitHead": "774c824db9aa7410f878aa23a2c83bf4dfb7153d"
 }

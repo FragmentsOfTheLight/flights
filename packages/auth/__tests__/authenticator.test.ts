@@ -1,7 +1,7 @@
 'use strict'
 
 import { RestApiAuthenticator } from '../src'
-import { JsonStorageAdapter } from '@lights/storage/src/adapters/json.adapter'
+import { JsonStorageAdapter } from '@flights/storage/src/adapters/json.adapter'
 
 describe('Authenticator', () => {
   const authenticator = new RestApiAuthenticator(

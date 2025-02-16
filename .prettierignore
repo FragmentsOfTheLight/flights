@@ -2,4 +2,4 @@ src/**/*.d.ts
 src/**/*.js
 coverage
 tools
-/packages/lights/old/.eslintrc.js
+/packages/flights/old/.eslintrc.js

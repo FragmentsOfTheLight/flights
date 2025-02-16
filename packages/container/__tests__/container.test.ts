@@ -6,7 +6,7 @@ import {
   ContainerInstanceAccess,
   ContainerInstancePriority,
   ContainerObserver,
-} from '@lights/core/contracts'
+} from '@flights/core/contracts'
 
 describe('MemoryContainer', () => {
   class TestService {
@@ -59,7 +59,7 @@ describe('MemoryContainer', () => {
       access: ContainerInstanceAccess.UNIQUE,
       priority: ContainerInstancePriority.HIGH,
       declaration: () => {
-        return 'LighTS App'
+        return 'flights App'
       },
     })
     expect(container.hasBinding('app')).toBe(false)

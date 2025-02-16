@@ -1,1 +1,1 @@
-import { Mutator } from '@lights/core/contracts'
+import { Mutator } from '@flights/core/contracts'

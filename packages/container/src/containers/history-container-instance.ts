@@ -1,8 +1,8 @@
-import { ClonableMixin } from '@lights/core'
+import { ClonableMixin } from '@flights/core'
 import {
   ContainerInstance,
   ContainerInstanceCall,
-} from '@lights/core/contracts'
+} from '@flights/core/contracts'
 
 class HistoryContainerInstanceBase {}
 

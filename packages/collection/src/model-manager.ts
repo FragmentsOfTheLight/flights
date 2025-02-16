@@ -8,14 +8,14 @@ import {
   mergeAvailableProps,
   Repository,
   RepositoryUploadData,
-} from '@lights/core'
-import { RepositoryQueryOptions } from '@lights/core/contracts'
+} from '@flights/core'
+import { RepositoryQueryOptions } from '@flights/core/contracts'
 import { ModelActionNotPermittedError } from './errors/model-manager.errors'
 import {
   getClassMetadata,
   getPropertyMetadata,
   mergeClassMetadata,
-} from '@lights/core/src/metadata'
+} from '@flights/core/src/metadata'
 import {
   MetadataKeyTypes,
   ModelState,

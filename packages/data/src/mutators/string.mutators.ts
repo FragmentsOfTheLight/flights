@@ -1,4 +1,4 @@
-import { Mutator } from '@lights/core/contracts'
+import { Mutator } from '@flights/core/contracts'
 
 export class StringPrefixMutator implements Mutator {
   private prefix: string

@@ -1,5 +1,5 @@
-import { SingleDecoratorMixin } from '@lights/core'
-import { StorageAdapter } from '@lights/core/contracts'
+import { SingleDecoratorMixin } from '@flights/core'
+import { StorageAdapter } from '@flights/core/contracts'
 import { FileStorageAdapter } from '.'
 import fs from 'fs'
 

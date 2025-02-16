@@ -3,12 +3,12 @@ import {
   Repository,
   RepositoryResult,
   RepositoryUploadData,
-} from '@lights/core'
+} from '@flights/core'
 import axios, { AxiosInstance } from 'axios'
 import {
   AuthenticatorObserver,
   RepositoryQueryOptions,
-} from '@lights/core/contracts'
+} from '@flights/core/contracts'
 import { RequestFailureRepositoryError } from '../errors'
 
 class RestApiRepositoryBase {}
@@ -206,7 +206,7 @@ export class RestApiRepository
   }
 
   generateQuery(options: RepositoryQueryOptions): string {
-    let query = '?lights=true'
+    let query = '?flights=true'
     if (options.pageNumber) {
       query += `&page[number]=${options.pageNumber}`
     }

@@ -1,4 +1,4 @@
-import { Metadata } from '@lights/core/src/contracts'
+import { Metadata } from '@flights/core/src/contracts'
 import { PropertiesData } from '../enums'
 
 export type FieldTag =

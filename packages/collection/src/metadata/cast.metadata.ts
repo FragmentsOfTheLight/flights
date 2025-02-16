@@ -1,4 +1,4 @@
-import { Metadata, ModelCastFunction } from '@lights/core/contracts'
+import { Metadata, ModelCastFunction } from '@flights/core/contracts'
 
 export interface CastMetadataOptions {
   get?: ModelCastFunction<any>

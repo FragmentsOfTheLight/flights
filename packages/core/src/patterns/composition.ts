@@ -1,4 +1,4 @@
-import { Constructor } from '@lights/core'
+import { Constructor } from '@flights/core'
 import _, { Dictionary } from 'lodash'
 
 /**

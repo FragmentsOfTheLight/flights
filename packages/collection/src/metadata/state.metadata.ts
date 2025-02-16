@@ -1,4 +1,4 @@
-import { Metadata } from '@lights/core/contracts'
+import { Metadata } from '@flights/core/contracts'
 import { ModelState } from '../enums'
 
 export class StateMetadata implements Metadata {

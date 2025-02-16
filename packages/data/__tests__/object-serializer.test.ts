@@ -1,6 +1,6 @@
 'use strict'
 
-import { Mapping } from '@lights/core/contracts'
+import { Mapping } from '@flights/core/contracts'
 import { ObjectSerializer } from '../src'
 
 describe('ObjectSerializer', () => {

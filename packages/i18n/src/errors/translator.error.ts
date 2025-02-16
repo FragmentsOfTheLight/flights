@@ -1,4 +1,4 @@
-import { BaseError } from '@lights/core'
+import { BaseError } from '@flights/core'
 
 export class TranslatorError extends BaseError {
   constructor(message: string) {

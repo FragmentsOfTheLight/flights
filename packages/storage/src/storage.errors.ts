@@ -1,4 +1,4 @@
-import { BaseError } from '@lights/core'
+import { BaseError } from '@flights/core'
 import { StorageAdapter } from 'packages/core/src/contracts/storage.contract'
 
 export class StorageError extends BaseError {

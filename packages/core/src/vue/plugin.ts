@@ -1,4 +1,4 @@
-import { rGlobal } from '@lights/core'
+import { rGlobal } from '@flights/core'
 
 export const globalSymbol = Symbol()
 

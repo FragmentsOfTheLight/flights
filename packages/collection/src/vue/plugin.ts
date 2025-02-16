@@ -1,4 +1,4 @@
-import { Repository } from '@lights/core'
+import { Repository } from '@flights/core'
 import { ModelManager } from '../model-manager'
 
 export const collectionSymbol = Symbol()

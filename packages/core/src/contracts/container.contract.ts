@@ -1,4 +1,4 @@
-import { Constructor, Observer } from '@lights/core'
+import { Constructor, Observer } from '@flights/core'
 
 export interface ContainerInterface {
   bindings: { [key: string]: ContainerBinding }

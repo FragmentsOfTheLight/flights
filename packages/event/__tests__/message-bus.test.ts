@@ -5,7 +5,7 @@ import {
   Message,
   MessageBusObserver,
   MessageType,
-} from '@lights/core/contracts'
+} from '@flights/core/contracts'
 
 describe('Message Bus', () => {
   // it('test.todo')

@@ -1,9 +1,9 @@
-import { isString, isUndefined } from '@lights/core'
+import { isString, isUndefined } from '@flights/core'
 import {
   getClassMetadata,
   getPropertyMetadata,
   mergePropertyMetadata,
-} from '@lights/core/src/metadata'
+} from '@flights/core/src/metadata'
 import {
   FieldMetadata,
   FieldMetadataOptions,

@@ -1,4 +1,4 @@
-import { BaseError } from '@lights/core'
+import { BaseError } from '@flights/core'
 import { ModelManagerAction } from '../enums/model-manager.types'
 
 export class ModelManagerError extends BaseError {

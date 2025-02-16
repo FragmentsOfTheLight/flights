@@ -1,5 +1,5 @@
 {
-  "name": "lights",
+  "name": "flights",
   "version": "1.0.0",
   "description": "A versatile TypeScript framework designed to be agnostic of any backend or frontend UI frameworks.",
   "author": "Mohammadrasul Alizadeh <https://github.com/rasulalizadeh>",
@@ -11,7 +11,7 @@
   "scripts": {
     "dev": "lerna run dev",
     "test": "npm t",
-    "start": "lerna run start --scope lights --stream",
+    "start": "lerna run start --scope flights --stream",
     "lint": "lerna run lint --parallel --stream",
     "lint:fix": "lerna run lint:fix --parallel",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",

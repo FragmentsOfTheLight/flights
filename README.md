@@ -1,6 +1,6 @@
-# LighTS Framework
+# flights Framework
 
-LighTS is a versatile TypeScript framework designed to be agnostic of any backend or frontend UI frameworks. It is built with multiple design patterns in mind, ensuring that it provides fully functional, expandable, and clean code suitable for both Node.js backends and client-side browsers.
+FLighTS is a versatile TypeScript framework designed to be agnostic of any backend or frontend UI frameworks. It is built with multiple design patterns in mind, ensuring that it provides fully functional, expandable, and clean code suitable for both Node.js backends and client-side browsers.
 
 The core repositories include:
 
@@ -18,7 +18,7 @@ The core repositories include:
 
 ## License
 
-The LighTS Framework is licensed under the MIT License. Below is the full text of the license:
+The flights Framework is licensed under the MIT License. Below is the full text of the license:
 
 ```plaintext
 MIT License

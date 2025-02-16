@@ -1,4 +1,4 @@
-import { Metadata } from '@lights/core/src/contracts'
+import { Metadata } from '@flights/core/src/contracts'
 import { ModelManagerAction } from '../enums/model-manager.types'
 import { pick } from 'lodash'
 import { plural } from 'pluralize'

@@ -1,5 +1,5 @@
-import { StorageAdapter } from '@lights/core/contracts'
-import { DecoratorBase } from '@lights/core'
+import { StorageAdapter } from '@flights/core/contracts'
+import { DecoratorBase } from '@flights/core'
 import { merge } from 'lodash'
 
 export class LocalStorageAdapter implements StorageAdapter, DecoratorBase {

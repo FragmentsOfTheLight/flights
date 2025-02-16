@@ -1,5 +1,5 @@
-import { BaseError } from '@lights/core'
-import { ContainerInterface } from '@lights/core/contracts'
+import { BaseError } from '@flights/core'
+import { ContainerInterface } from '@flights/core/contracts'
 
 export class ContainerError extends BaseError {
   private readonly _container: ContainerInterface

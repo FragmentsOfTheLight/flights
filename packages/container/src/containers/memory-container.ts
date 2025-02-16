@@ -4,13 +4,13 @@ import {
   ObservableMixin,
   isConstructor,
   Constructor,
-} from '@lights/core'
+} from '@flights/core'
 import {
   ContainerBinding,
   ContainerInstanceAccess,
   ContainerInterface,
   ContainerObserver,
-} from '@lights/core/contracts'
+} from '@flights/core/contracts'
 import { ContainerMemento } from '../'
 import { ContainerBindKeyNotFound } from './container.errors'
 

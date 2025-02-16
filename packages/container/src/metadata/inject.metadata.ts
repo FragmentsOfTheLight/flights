@@ -1,4 +1,4 @@
-import { ContainerBinding } from '@lights/core/src/contracts'
+import { ContainerBinding } from '@flights/core/src/contracts'
 
 export interface InjectMetadataOptions {
   key: string

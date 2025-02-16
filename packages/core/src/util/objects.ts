@@ -1,6 +1,6 @@
 import { getPropertyMetadata } from '../metadata'
-import { CastMetadata, MetadataKeyTypes } from '@lights/collection'
-import { NestedMetadata } from '@lights/collection/src/metadata/nested.metadata'
+import { CastMetadata, MetadataKeyTypes } from '@flights/collection'
+import { NestedMetadata } from '@flights/collection/src/metadata/nested.metadata'
 
 export function isString(object: any) {
   return typeof object === 'string' || object instanceof String

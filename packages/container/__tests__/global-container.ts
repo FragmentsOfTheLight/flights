@@ -1,10 +1,10 @@
 'use strict'
 
-import { rGlobal } from '@lights/core'
+import { rGlobal } from '@flights/core'
 import {
   ContainerInstanceAccess,
   ContainerInstancePriority,
-} from '@lights/core/src/contracts'
+} from '@flights/core/src/contracts'
 import { MemoryContainer } from '../src'
 
 describe('Globals', () => {

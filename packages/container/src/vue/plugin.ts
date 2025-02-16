@@ -1,5 +1,5 @@
-import { ContainerInterface } from '@lights/core/src/contracts'
-import { Constructor } from '@lights/core'
+import { ContainerInterface } from '@flights/core/src/contracts'
+import { Constructor } from '@flights/core'
 
 export interface ContainerOptions {
   container: Constructor<ContainerInterface>

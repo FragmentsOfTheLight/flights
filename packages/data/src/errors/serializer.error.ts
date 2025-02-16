@@ -1,4 +1,4 @@
-import { BaseError } from '@lights/core'
+import { BaseError } from '@flights/core'
 
 export class SerializerError extends BaseError {
   constructor(message: string) {

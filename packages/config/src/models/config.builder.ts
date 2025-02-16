@@ -1,5 +1,5 @@
 import { Buildable, builder } from 'packages/core'
-import { StorageAdapter } from '@lights/core/contracts'
+import { StorageAdapter } from '@flights/core/contracts'
 import { Config } from '../config.interface'
 import { MemoryConfig } from './memory-config.model'
 

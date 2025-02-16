@@ -1,4 +1,4 @@
-import { Constructor, Repository } from '@lights/core'
+import { Constructor, Repository } from '@flights/core'
 
 export interface Serializer<F, T> {
   validate(data: F): boolean

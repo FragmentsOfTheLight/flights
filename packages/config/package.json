@@ -1,9 +1,9 @@
 {
-  "name": "@lights/config",
+  "name": "@flights/config",
   "version": "0.1.1",
-  "description": "LighTS configuration reader and generator",
+  "description": "flights configuration reader and generator",
   "author": "Rasul Alizadeh <mohammadr.alizadeh@live.com>",
-  "homepage": "https://github.com/fragmentsofthelight/lights#readme",
+  "homepage": "https://github.com/fragmentsofthelight/flights#readme",
   "license": "MIT",
   "main": "src/index.ts",
   "directories": {
@@ -15,13 +15,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fragmentsofthelight/lights.git"
+    "url": "git+https://github.com/fragmentsofthelight/flights.git"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
-    "url": "https://github.com/fragmentsofthelight/lights/issues"
+    "url": "https://github.com/fragmentsofthelight/flights/issues"
   },
   "gitHead": "774c824db9aa7410f878aa23a2c83bf4dfb7153d"
 }

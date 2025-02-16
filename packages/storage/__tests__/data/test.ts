@@ -3,7 +3,7 @@ export default {
     {
       engine: 'mysql',
       host: 'localhost',
-      database: 'lights',
+      database: 'flights',
       username: 'root',
       password: '',
     },

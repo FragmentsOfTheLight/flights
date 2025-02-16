@@ -1,6 +1,6 @@
 'use strict'
 
-import { ModelCast, ModelValidation } from '@lights/core/contracts'
+import { ModelCast, ModelValidation } from '@flights/core/contracts'
 import { Cast, Errors, Field, Model, Validation, History } from '../src'
 
 const multiplyCast: ModelCast<User> = {

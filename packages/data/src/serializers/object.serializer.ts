@@ -3,8 +3,8 @@ import {
   MessageBus,
   MessageType,
   Serializer,
-} from '@lights/core/contracts'
-import { Constructor, DecoratorBase } from '@lights/core'
+} from '@flights/core/contracts'
+import { Constructor, DecoratorBase } from '@flights/core'
 import {
   InvalidKeySerializerError,
   InvalidTypeSerializerError,

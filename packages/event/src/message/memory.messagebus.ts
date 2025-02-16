@@ -1,5 +1,5 @@
-import { ObservableMixin } from '@lights/core'
-import { Message, MessageBus, MessageBusObserver } from '@lights/core/contracts'
+import { ObservableMixin } from '@flights/core'
+import { Message, MessageBus, MessageBusObserver } from '@flights/core/contracts'
 import { EmptyMessageBusError } from '../errors'
 
 class MessageBusBase {}

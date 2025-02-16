@@ -1,7 +1,7 @@
 import {
   getPropertyMetadata,
   mergePropertyMetadata,
-} from '@lights/core/src/metadata'
+} from '@flights/core/src/metadata'
 import { WidgetMetadata } from '../metadata'
 import { MetadataKeyTypes, WidgetType } from '../enums'
 
