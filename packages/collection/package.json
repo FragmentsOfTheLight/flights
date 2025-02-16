@@ -10,6 +10,9 @@
     "src": "src",
     "test": "__tests__"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "src",
     "vue.ts"
@@ -32,5 +35,5 @@
   "devDependencies": {
     "@types/pluralize": "^0.0.29"
   },
-  "gitHead": "74ceb0ac77510205bdb36e2ccd9e992d369048ba"
+  "gitHead": "b3f3939916f76f5ebe8f10fee15aa5f4886374e0"
 }
