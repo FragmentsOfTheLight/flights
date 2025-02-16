@@ -4,7 +4,7 @@
   "description": "A versatile TypeScript framework designed to be agnostic of any backend or frontend UI frameworks.",
   "author": "Mohammadrasul Alizadeh <https://github.com/rasulalizadeh>",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "workspaces": [
     "packages/*"
   ],
