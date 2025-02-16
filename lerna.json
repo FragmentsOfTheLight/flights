@@ -4,27 +4,18 @@
   "command": {
     "publish": {
       "access": "public",
-      "ignoreChanges": [
-        "ignored-file",
-        "*.md"
-      ],
+      "ignoreChanges": ["ignored-file", "*.md"],
       "message": "chore(release): publish %s",
-      "allowBranch": [
-        "main",
-        "dev"
-      ]
+      "allowBranch": ["main", "dev"]
     },
     "version": {
+      "private": false,
       "push": true
     },
     "bootstrap": {
       "ignore": "component-*",
-      "npmClientArgs": [
-        "--no-package-lock"
-      ]
+      "npmClientArgs": ["--no-package-lock"]
     }
   },
-  "packages": [
-    "packages/*"
-  ]
+  "packages": ["packages/*"]
 }
