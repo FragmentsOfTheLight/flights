@@ -1,6 +1,6 @@
 {
   "name": "@flights/core",
-  "version": "0.1.20",
+  "version": "0.1.21",
   "description": "flights core packages and patterns",
   "author": "Rasul Alizadeh <mohammadr.alizadeh@live.com>",
   "homepage": "https://github.com/fragmentsofthelight/flights#readme",
@@ -48,9 +48,8 @@
     "reflect-metadata": "^0.1.13"
   },
   "peerDependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "vue": "^3.0.0"
+    "react": "^19",
+    "vue": "^3"
   },
   "gitHead": "ea18951f0fd137ba8ea8b11ee4b2a1204a6aecad"
 }

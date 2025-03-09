@@ -1,6 +1,6 @@
 {
   "name": "@flights/collection",
-  "version": "0.1.20",
+  "version": "0.1.21",
   "description": "flights model-collection module",
   "author": "Rasul Alizadeh <mohammadr.alizadeh@live.com>",
   "homepage": "https://github.com/fragmentsofthelight/flights/collection#readme",
@@ -36,17 +36,16 @@
     "url": "https://github.com/fragmentsofthelight/flights/issues"
   },
   "dependencies": {
-    "@flights/container": "^0.1.20",
-    "@flights/core": "^0.1.20",
+    "@flights/container": "^0.1.21",
+    "@flights/core": "^0.1.21",
     "pluralize": "^8.0.0"
-  },
-  "peerDependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "vue": "^3.0.0"
   },
   "devDependencies": {
     "@types/pluralize": "^0.0.29"
+  },
+  "peerDependencies": {
+    "react": "^19",
+    "vue": "^3"
   },
   "gitHead": "ea18951f0fd137ba8ea8b11ee4b2a1204a6aecad"
 }
