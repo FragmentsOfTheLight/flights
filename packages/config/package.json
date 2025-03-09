@@ -1,6 +1,6 @@
 {
   "name": "@flights/config",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "description": "flights configuration reader and generator",
   "author": "Rasul Alizadeh <mohammadr.alizadeh@live.com>",
   "homepage": "https://github.com/fragmentsofthelight/flights#readme",
@@ -16,6 +16,10 @@
   "files": [
     "src"
   ],
+  "exports": {
+    "./*": "./src/*"
+  },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fragmentsofthelight/flights.git"

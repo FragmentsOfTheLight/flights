@@ -1,6 +1,6 @@
 {
   "name": "@flights/framework",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "description": "flights framework",
   "author": "Rasul Alizadeh <mohammadr.alizadeh@live.com>",
   "homepage": "https://github.com/fragmentsofthelight/flights/collection#readme",
@@ -16,6 +16,10 @@
   "files": [
     "src"
   ],
+  "exports": {
+    "./*": "./src/*"
+  },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fragmentsofthelight/flights.git"
@@ -27,7 +31,7 @@
     "url": "https://github.com/fragmentsofthelight/flights/issues"
   },
   "dependencies": {
-    "@flights/core": "^0.1.13"
+    "@flights/core": "^0.1.14"
   },
   "gitHead": "b3f3939916f76f5ebe8f10fee15aa5f4886374e0"
 }
