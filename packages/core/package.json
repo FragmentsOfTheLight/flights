@@ -16,6 +16,7 @@
   "files": [
     "src",
     "vue.ts",
+    "react.ts",
     "contracts.ts",
     "metadata.ts",
     "index.ts"

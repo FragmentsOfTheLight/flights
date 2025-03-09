@@ -15,7 +15,8 @@
   },
   "files": [
     "src",
-    "vue.ts"
+    "vue.ts",
+    "react.ts"
   ],
   "repository": {
     "type": "git",
