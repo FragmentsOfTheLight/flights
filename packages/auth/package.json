@@ -1,6 +1,6 @@
 {
   "name": "@flights/auth",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "description": "flights authentication package",
   "author": "Rasul Alizadeh <mohammadr.alizadeh@live.com>",
   "homepage": "https://github.com/fragmentsofthelight/flights#readme",
@@ -18,11 +18,6 @@
     "vue.ts",
     "react.ts"
   ],
-  "exports": {
-    "./*": "./src/*",
-    "./vue": "./vue.ts",
-    "./react": "./react.ts"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fragmentsofthelight/flights.git"
@@ -34,9 +29,9 @@
     "url": "https://github.com/fragmentsofthelight/flights/issues"
   },
   "dependencies": {
-    "@flights/collection": "^0.1.11",
-    "@flights/core": "^0.1.11",
-    "@flights/data": "^0.1.11",
+    "@flights/collection": "^0.1.12",
+    "@flights/core": "^0.1.12",
+    "@flights/data": "^0.1.12",
     "axios": "^1.7.9"
   },
   "gitHead": "b3f3939916f76f5ebe8f10fee15aa5f4886374e0"

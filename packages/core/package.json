@@ -1,6 +1,6 @@
 {
   "name": "@flights/core",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "description": "flights core packages and patterns",
   "author": "Rasul Alizadeh <mohammadr.alizadeh@live.com>",
   "homepage": "https://github.com/fragmentsofthelight/flights#readme",
@@ -20,13 +20,6 @@
     "contracts.ts",
     "metadata.ts"
   ],
-  "exports": {
-    "./*": "./src/*",
-    "./vue": "./vue.ts",
-    "./react": "./react.ts",
-    "./contracts": "./contracts.ts",
-    "./metadata": "./metadata.ts"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fragmentsofthelight/flights.git"
