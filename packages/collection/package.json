@@ -1,6 +1,6 @@
 {
   "name": "@flights/collection",
-  "version": "0.1.22",
+  "version": "0.1.23",
   "description": "flights model-collection module",
   "author": "Rasul Alizadeh <mohammadr.alizadeh@live.com>",
   "homepage": "https://github.com/fragmentsofthelight/flights/collection#readme",
@@ -36,8 +36,8 @@
     "url": "https://github.com/fragmentsofthelight/flights/issues"
   },
   "dependencies": {
-    "@flights/container": "^0.1.22",
-    "@flights/core": "^0.1.22",
+    "@flights/container": "^0.1.23",
+    "@flights/core": "^0.1.23",
     "pluralize": "^8.0.0"
   },
   "devDependencies": {
