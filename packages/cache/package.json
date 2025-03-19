@@ -1,6 +1,6 @@
 {
   "name": "@flights/cache",
-  "version": "0.1.26",
+  "version": "0.1.27",
   "description": "flights caching layer",
   "author": "Rasul Alizadeh <mohammadr.alizadeh@live.com>",
   "homepage": "https://github.com/fragmentsofthelight/flights#readme",
