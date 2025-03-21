@@ -1,6 +1,6 @@
 {
   "name": "@flights/logger",
-  "version": "0.1.30",
+  "version": "0.1.31",
   "description": "flights logger and data collector",
   "author": "Rasul Alizadeh <mohammadr.alizadeh@live.com>",
   "homepage": "https://github.com/fragmentsofthelight/flights#readme",
