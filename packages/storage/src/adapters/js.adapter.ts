@@ -1,7 +1,6 @@
 import { SingleDecoratorMixin } from '@flights/core'
 import { StorageAdapter } from '@flights/core/contracts'
-import { FileStorageAdapter } from '.'
-import fs from 'fs'
+import { FileStorageAdapter } from './file.adapter'
 
 class TsStorageBase {}
 

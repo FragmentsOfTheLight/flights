@@ -31,6 +31,9 @@ class User {
   @Field('name')
   public name?: string
 
+  @Field('child')
+  public child?: User
+
   @Field('email')
   @Validation(emailValidator)
   public email?: string
@@ -65,5 +68,27 @@ describe('Collection', () => {
     ])
     console.log(collection)
     expect(collection.size).toBe(3)
+  })
+
+  test('collectionToArray', () => {
+    const collection = new Collection(User)
+    collection.append([
+      new User('reza'),
+      {
+        name: 'saeed',
+      },
+      {
+        name: 'mohammad',
+      },
+      {
+        name: undefined,
+      },
+      {
+        name: 'reza',
+        child: new User('ahmad')
+      }
+    ])
+    console.log(collection.toArray())
+    expect(collection.size).toBe(5)
   })
 })

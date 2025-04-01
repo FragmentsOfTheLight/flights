@@ -12,7 +12,7 @@ import {
   Widget,
 } from '../src'
 import { ModelManager } from '../src/model-manager'
-import { RestApiRepository } from '@flights/data/src/repository'
+import { RestApiRepository } from '@flights/data'
 
 const multiplyCast: ModelCast<User> = {
   get: (model, key, value) => {

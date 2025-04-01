@@ -6,6 +6,7 @@ import {
   RepositoryResultMetaPage,
 } from '@flights/core'
 import { ModelState } from './enums'
+import { Model } from './decorator'
 
 export class Collection<T extends { [key: string]: any }> {
   private readonly _modelPrototype: Constructor<T>
@@ -150,6 +151,44 @@ export class Collection<T extends { [key: string]: any }> {
     this.items.splice(this.index(index), 1)
   }
 
+  toArray(columns: string[] | undefined = undefined): Array<any> {
+    return this._items.map((model: any) => {
+      return Collection.modelToArray(model, columns)
+    })
+  }
+
+  static modelToArray(model: Object, columns: string[] | undefined = undefined): Object {
+    let result = {} as any
+    let filterFn = function (key: string) {
+      return true
+    }
+    if (columns) {
+      filterFn = function (key: string) {
+        if (columns.includes(key)) {
+          return true
+        }
+        return false
+      }
+    }
+    if ((model as any).$) {
+      Object.entries((model as any).$).forEach(item => {
+        if (!filterFn(item[0])) {
+          return
+        }
+        if (isCollection(item[1])) {
+          result[item[0]] = (item[1] as Collection<any>).toArray()
+        } else if (item[1] instanceof Object && '$' in item[1]) {
+          result[item[0]] = this.modelToArray(item[1] as any)
+        } else {
+          result[item[0]] = item[1]
+        }
+      })
+    } else {
+      result = model
+    }
+    return result
+  }
+
   clear() {
     this._items = []
   }
@@ -170,5 +209,5 @@ export class Collection<T extends { [key: string]: any }> {
 }
 
 export function isCollection(object: any): object is Collection<any> {
-  return (<Collection<any>>object)['_items'] !== undefined
+  return object != undefined && (<Collection<any>>object)['_items'] !== undefined
 }

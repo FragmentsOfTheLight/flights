@@ -15,7 +15,7 @@ import {
   getClassMetadata,
   getPropertyMetadata,
   mergeClassMetadata,
-} from '@flights/core/src/metadata'
+} from '@flights/core/metadata'
 import {
   MetadataKeyTypes,
   ModelState,

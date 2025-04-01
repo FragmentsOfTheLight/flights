@@ -1,6 +1,6 @@
 'use strict'
 
-import { JsStorageAdapter } from '../src/adapters'
+import { JsStorageAdapter } from "../src/adapters/js.adapter"
 
 describe('JsStorageAdapter', () => {
   const jsStorageAdapter = new JsStorageAdapter()

@@ -1,9 +1,9 @@
 'use strict'
 
-import { YamlStorageAdapter } from "../src/index"
+import { YamlStorageAdapter } from "../src/adapters/yaml.adapter"
 
 describe('YamlStorageAdapter', () => {
-  
+
   const yamlStorageAdapter = new YamlStorageAdapter()
   test('read', () => {
     const data = yamlStorageAdapter.read(__dirname + '/data/test.yaml')

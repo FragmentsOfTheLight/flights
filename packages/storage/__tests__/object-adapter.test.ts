@@ -1,9 +1,9 @@
 'use strict'
 
-import { LocalStorageAdapter } from "../src/adapters/local-storage.adapter"
+import { ObjectStorageAdapter } from "../src/adapters/object.adapter"
 
-describe('LocalStorageStorageAdapter', () => {
-  const storageAdapter = new LocalStorageAdapter()
+describe('ObjectAdapter', () => {
+  const storageAdapter = new ObjectStorageAdapter()
   test('write', () => {
     const data = {
       connection: 'mysql',

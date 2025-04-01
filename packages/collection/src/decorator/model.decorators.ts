@@ -4,7 +4,7 @@ import {
   Constructor,
   ClassConstructorDecorator,
 } from '@flights/core'
-import { mergeClassMetadata } from '@flights/core/src/metadata'
+import { mergeClassMetadata } from '@flights/core/metadata'
 import { MetadataKeyTypes, ModelState } from '../enums'
 import { ModelMetadataOptions, ModelMetadata } from '../metadata'
 import { lowerCase } from 'lodash'

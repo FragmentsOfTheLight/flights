@@ -3,7 +3,7 @@ import {
   getClassMetadata,
   getPropertyMetadata,
   mergePropertyMetadata,
-} from '@flights/core/src/metadata'
+} from '@flights/core/metadata'
 import {
   FieldMetadata,
   FieldMetadataOptions,

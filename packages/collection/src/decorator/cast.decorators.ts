@@ -1,7 +1,7 @@
 import {
   getPropertyMetadata,
   mergePropertyMetadata,
-} from '@flights/core/src/metadata'
+} from '@flights/core/metadata'
 import { CastMetadata, CastMetadataOptions } from '../metadata'
 import { MetadataKeyTypes } from '../enums'
 

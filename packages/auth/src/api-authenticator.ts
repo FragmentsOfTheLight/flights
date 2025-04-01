@@ -97,6 +97,14 @@ export class RestApiAuthenticator
     return this._user
   }
 
+  get storageKey() {
+    return this._storageKey
+  }
+
+  get storage() {
+    return this._storage
+  }
+
   hasRole(name: string) {
     if (this.isValid) {
       if (this._user) {

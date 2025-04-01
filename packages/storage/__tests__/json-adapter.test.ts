@@ -1,9 +1,9 @@
 'use strict'
 
-import { JsonStorageAdapter } from "../src/index"
+import { JsonStorageAdapter } from "../src/adapters/json.adapter"
 
 describe('JsonStorageAdapter', () => {
-  
+
   const jsonStorageAdapter = new JsonStorageAdapter()
   test('read', () => {
     const data = jsonStorageAdapter.read(__dirname + '/data/test.json')

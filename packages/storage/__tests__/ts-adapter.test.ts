@@ -1,9 +1,9 @@
 'use strict'
 
-import { TsStorageAdapter } from "../src/index"
+import { TsStorageAdapter } from "../src/adapters/ts.adapter"
 
 describe('TsStorageAdapter', () => {
-  
+
   const tsStorageAdapter = new TsStorageAdapter()
   test('read', () => {
     const data = tsStorageAdapter.read(__dirname + '/data/test.ts')

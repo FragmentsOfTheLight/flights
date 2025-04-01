@@ -1,4 +1,4 @@
-import { mergePropertyMetadata } from '@flights/core/src/metadata'
+import { mergePropertyMetadata } from '@flights/core/metadata'
 import { MetadataKeyTypes } from '../enums'
 import { ValidationMetadata, ValidationMetadataOptions } from '../metadata'
 
