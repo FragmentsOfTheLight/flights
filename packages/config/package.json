@@ -1,6 +1,6 @@
 {
   "name": "@flights/config",
-  "version": "0.1.35",
+  "version": "0.1.36",
   "description": "flights configuration reader and generator",
   "author": "Rasul Alizadeh <mohammadr.alizadeh@live.com>",
   "homepage": "https://github.com/fragmentsofthelight/flights#readme",
