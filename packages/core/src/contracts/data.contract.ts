@@ -32,7 +32,7 @@ export interface RepositoryFilterOptions {
 }
 
 export enum RepositoryFilterOperator {
-  EQUAL = 'eq:',
+  EQUAL = '',
   NOT_EQUAL = 'neq:',
   LESS_THAN = 'lt:',
   LESS_OR_EQUAL = 'lte:',

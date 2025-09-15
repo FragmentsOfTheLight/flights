@@ -19,6 +19,12 @@ export interface RestApiResponse {
   expires_in: number
   access_token: string
   refresh_token: string
+  data?: {
+    token_type: string
+    expires_in: number
+    access_token: string
+    refresh_token: string
+  }
 }
 
 export interface UserApiResponse {
@@ -123,6 +129,9 @@ export class RestApiAuthenticator
     if (this.isValid) {
       const axiosInstance: AxiosInstance = axios.create({
         withCredentials: true,
+        headers: {
+          "Cache-Control": "no-store"
+        }
       })
       axiosInstance.defaults.headers.common[
         'Authorization'
@@ -294,15 +303,14 @@ export class RestApiAuthenticator
   }
 
   async getToken(username: string, password: string): Promise<AuthResponse> {
-    const data = {
-      grant_type: 'password',
-      username: username,
-      password: password,
-      client_id: this._clientId,
-      client_secret: this._clientSecret,
-    }
+    const formData = new URLSearchParams();
+    formData.append('grant_type', 'password');
+    formData.append('username', username);
+    formData.append('password', password);
+    formData.append('client_id', String(this._clientId));
+    formData.append('client_secret', this._clientSecret);
     try {
-      const response = this.requestToken(data)
+      const response = this.requestToken(formData)
       this.callObservers('issued', this, this._token ?? '')
       return response
     } catch (reason) {
@@ -312,40 +320,42 @@ export class RestApiAuthenticator
   }
 
   async refreshToken(refreshToken?: string): Promise<AuthResponse> {
-    const data = {
-      grant_type: 'refresh_token',
-      refresh_token: refreshToken ?? this._refreshToken,
-      client_id: this._clientId,
-      client_secret: this._clientSecret,
-    }
     try {
-      const oldToken = this._token
-      const response = this.requestToken(data)
-      this.callObservers('refreshed', this, oldToken ?? '', this._token ?? '')
-      return response
+      const result = await axios.get<RestApiResponse>(this._authUrl, {
+        headers: {
+          Authorization: "Bearer " + (refreshToken ?? this._refreshToken)
+        }
+      })
+      this._token = result.data.access_token ?? result.data.data?.access_token
+      this._refreshToken = result.data.refresh_token ?? result.data.data?.refresh_token
+      this._validity = Date.now() + (result.data.expires_in ?? result.data.data?.expires_in) * 1000
+      if (this._storage)
+        this.export(this._storage, this._storageKey).finally(() => {})
+      this.callObservers('refreshed', this, this._token ?? '')
+      return {
+        token: this._token,
+        lifetime: result.data.expires_in ?? result.data.data?.expires_in,
+        generated_at: Date.now(),
+        expires_at: this._validity,
+      }
     } catch (reason) {
       this.callObservers('failed', this, reason)
       throw new AuthenticationFailError(reason)
     }
   }
 
-  protected async requestToken(data: any) {
-    const result = await axios.post<RestApiResponse>(this._authUrl, data)
-    this._token = result.data.access_token
-    this._refreshToken = result.data.refresh_token
-    this._validity = Date.now() + result.data.expires_in * 1000
-    try {
-      await this.requestUserInfo()
-    } catch (e) {
-      this.clearAuthentication()
-    }
+  protected async requestToken(data: any, headers?: any) {
+    const result = await axios.post<RestApiResponse>(this._authUrl, data, headers)
+    this._token = result.data.access_token ?? result.data.data?.access_token
+    this._refreshToken = result.data.refresh_token ?? result.data.data?.refresh_token
+    this._validity = Date.now() + (result.data.expires_in ?? result.data.data?.expires_in) * 1000
     if (this._storage)
       this.export(this._storage, this._storageKey).finally(() => {})
     return {
-      token: result.data.access_token,
-      lifetime: result.data.expires_in,
+      token: this._token,
+      lifetime: result.data.expires_in ?? result.data.data?.expires_in,
       generated_at: Date.now(),
-      expires_at: Date.now() + result.data.expires_in,
+      expires_at: this._validity,
     }
   }
 
