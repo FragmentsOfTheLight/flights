@@ -1,6 +1,6 @@
 {
   "name": "@flights/core",
-  "version": "0.1.49",
+  "version": "0.1.50",
   "description": "flights core packages and patterns",
   "author": "Rasul Alizadeh <mohammadr.alizadeh@live.com>",
   "homepage": "https://github.com/fragmentsofthelight/flights#readme",
@@ -51,5 +51,5 @@
     "react": "^19",
     "vue": "^3"
   },
-  "gitHead": "8dd0aa752922ea2471b98dfa4a2e2643caaab7f6"
+  "gitHead": "c371a7867552e50fa3c072181ca498a415e2996c"
 }
