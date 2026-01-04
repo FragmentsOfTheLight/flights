@@ -1,4 +1,4 @@
-export class Role {
+export class Permission {
   id: string
   name: string
 

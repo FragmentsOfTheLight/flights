@@ -1,4 +1,5 @@
 import { Constructor, Repository } from '@flights/core'
+import { AxiosRequestConfig } from 'axios'
 
 export interface Serializer<F, T> {
   validate(data: F): boolean
@@ -21,7 +22,9 @@ export interface Mapping {
 export interface RepositoryQueryOptions {
   pageNumber?: number
   pageSize?: number
-  filters?: RepositoryFilterOptions[]
+  filters?: RepositoryFilterOptions[],
+  body?: RepositoryBodyType,
+  config?: AxiosRequestConfig
 }
 
 export interface RepositoryFilterOptions {
@@ -44,9 +47,15 @@ export enum RepositoryFilterOperator {
   LIKE = 'like:',
   IS_NULL = 'isnull:',
   IS_NOT_NULL = 'isnotnull:',
+  RAW = '',
 }
 
 export enum RepositoryFilterRelation {
   AND = 'and',
   OR = 'or',
+}
+
+export enum RepositoryBodyType {
+  JSON = 'application/json',
+  FORM = 'multipart/form-data',
 }

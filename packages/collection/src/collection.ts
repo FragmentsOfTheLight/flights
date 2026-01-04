@@ -151,13 +151,13 @@ export class Collection<T extends { [key: string]: any }> {
     this.items.splice(this.index(index), 1)
   }
 
-  toArray(columns: string[] | undefined = undefined): Array<any> {
+  toArray(columns: string[] | undefined = undefined, cast: boolean = true): Array<any> {
     return this._items.map((model: any) => {
-      return Collection.modelToArray(model, columns)
+      return Collection.modelToArray(model, cast, columns)
     })
   }
 
-  static modelToArray(model: Object, columns: string[] | undefined = undefined): Object {
+  static modelToArray(model: Object, cast: boolean = true, columns: string[] | undefined = undefined): Object {
     let result = {} as any
     let filterFn = function (key: string) {
       return true
@@ -180,7 +180,11 @@ export class Collection<T extends { [key: string]: any }> {
         } else if (item[1] instanceof Object && '$' in item[1]) {
           result[item[0]] = this.modelToArray(item[1] as any)
         } else {
-          result[item[0]] = item[1]
+          if (cast) {
+            result[item[0]] = (model as any)[item[0]]
+          } else {
+            result[item[0]] = item[1]
+          }
         }
       })
     } else {

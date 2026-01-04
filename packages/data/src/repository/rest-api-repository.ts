@@ -4,9 +4,11 @@ import {
   RepositoryResult,
   RepositoryUploadData,
 } from '@flights/core'
-import axios, { AxiosInstance } from 'axios'
+import axios, { AxiosInstance, AxiosRequestConfig } from 'axios'
 import {
   AuthenticatorObserver,
+  RepositoryBodyType,
+  RepositoryFilterOperator,
   RepositoryQueryOptions,
 } from '@flights/core/contracts'
 import { RequestFailureRepositoryError } from '../errors'
@@ -61,6 +63,7 @@ export class RestApiRepository
     try {
       const axiosResult = await this._axios.get<RepositoryResult<T>>(
         queryAddress,
+        this.wrapAxiosOptions(options)
       )
       axiosResult.data.url = axiosResult.config.url
       axiosResult.data.method = axiosResult.config.method
@@ -90,7 +93,8 @@ export class RestApiRepository
     try {
       const axiosResult = await this._axios.post<RepositoryResult<T>>(
         queryAddress,
-        data,
+        this.wrapData(data, options),
+        this.wrapAxiosOptions(options)
       )
       axiosResult.data.url = axiosResult.config.url
       axiosResult.data.method = axiosResult.config.method
@@ -122,6 +126,7 @@ export class RestApiRepository
     try {
       const axiosResult = await this._axios.delete<RepositoryResult<T>>(
         queryAddress,
+        this.wrapAxiosOptions(options)
       )
       axiosResult.data.url = axiosResult.config.url
       axiosResult.data.method = axiosResult.config.method
@@ -153,6 +158,7 @@ export class RestApiRepository
     try {
       const axiosResult = await this._axios.get<RepositoryResult<T>>(
         queryAddress,
+        this.wrapAxiosOptions(options)
       )
       axiosResult.data.url = axiosResult.config.url
       axiosResult.data.method = axiosResult.config.method
@@ -185,7 +191,8 @@ export class RestApiRepository
     try {
       const axiosResult = await this._axios.patch<RepositoryResult<T>>(
         queryAddress,
-        data,
+        this.wrapData(data, options),
+        this.wrapAxiosOptions(options)
       )
       axiosResult.data.url = axiosResult.config.url
       axiosResult.data.method = axiosResult.config.method
@@ -205,6 +212,31 @@ export class RestApiRepository
     }
   }
 
+  wrapData(data: any, options?: RepositoryQueryOptions) : any {
+    if (options && options.body == RepositoryBodyType.FORM) {
+      const formData = new URLSearchParams();
+      data.forEach((key: any, value: any) => {
+        formData.append(key, value)
+      });
+      return formData
+    } else {
+      return data
+    }
+  }
+
+  wrapAxiosOptions(options?: RepositoryQueryOptions) : AxiosRequestConfig {
+    if (options && options.body == RepositoryBodyType.FORM) {
+      if (options.config == undefined) {
+        options.config = {}
+      }
+      if (options.config.headers == undefined) {
+        options.config.headers = {}
+      }
+      options.config.headers['Content-Type'] = "multipart/form-data"
+    }
+    return options?.config ?? {}
+  }
+
   generateQuery(options: RepositoryQueryOptions): string {
     let query = '?flights=true'
     if (options.pageNumber) {
@@ -220,9 +252,15 @@ export class RestApiRepository
             filter.operator ?? ''
           }${filter.value}`
         } else {
-          query += `&filter[${filter.name}]=${filter.operator ?? ''}${
-            filter.value
-          }`
+          if (filter.operator == RepositoryFilterOperator.RAW) {
+            query += `&${filter.name}=${filter.operator ?? ''}${
+              filter.value
+            }`
+          } else {
+            query += `&filter[${filter.name}]=${filter.operator ?? ''}${
+              filter.value
+            }`
+          }
         }
       })
     }

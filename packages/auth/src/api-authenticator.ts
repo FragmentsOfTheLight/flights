@@ -31,14 +31,31 @@ export interface UserApiResponse {
   status: string
   message: number
   data: {
-    user: {
-      id: number
+    id?: string
+    name?: string
+    status?: number
+    score?: number
+    balance?: string
+    roles?: {
+      id: string
+      name: string
+    }[],
+    permissions?: {
+      id: string
+      name: string
+    }[]
+    user?: {
+      id: string
       name: string
       status: number
       score?: number
       balance?: string
       roles: {
-        id: number
+        id: string
+        name: string
+      }[],
+      permissions?: {
+        id: string
         name: string
       }[]
     }
@@ -126,19 +143,19 @@ export class RestApiAuthenticator
   }
 
   get axios(): AxiosInstance {
+    const axiosInstance: AxiosInstance = axios.create({
+      withCredentials: true,
+      headers: {
+        "Cache-Control": "no-store"
+      }
+    });
     if (this.isValid) {
-      const axiosInstance: AxiosInstance = axios.create({
-        withCredentials: true,
-        headers: {
-          "Cache-Control": "no-store"
-        }
-      })
       axiosInstance.defaults.headers.common[
         'Authorization'
       ] = `Bearer ${this._token}`
       return axiosInstance
     }
-    return axios.create()
+    return axiosInstance
   }
 
   get isValid() {
@@ -361,12 +378,14 @@ export class RestApiAuthenticator
 
   public async requestUserInfo() {
     const user = await this.axios.get<UserApiResponse>(this._userUrl)
+    console.log(user)
     this._user = new User(
-      user.data.data.user.id,
-      user.data.data.user.name,
-      user.data.data.user.roles,
-      user.data.data.user.score ?? 0,
-      user.data.data.user.balance ?? '0',
+      user.data.data?.id ?? user.data.data?.user?.id ?? '',
+      user.data.data?.name ?? user.data.data?.user?.name ?? '',
+      user.data.data?.roles ?? user.data.data?.user?.roles,
+      user.data.data?.permissions ?? user.data.data?.user?.permissions,
+      user.data.data?.score ?? user.data.data?.user?.score ?? 0,
+      user.data.data?.balance ?? user.data.data?.user?.balance ?? '0',
     )
     this.callObservers('stateChanged', this, this.isValid)
     this.callObservers('userUpdated', this, this._user, user)
