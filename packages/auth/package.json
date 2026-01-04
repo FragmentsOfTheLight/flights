@@ -1,6 +1,6 @@
 {
   "name": "@flights/auth",
-  "version": "0.1.43",
+  "version": "0.1.44",
   "description": "flights authentication package",
   "author": "Rasul Alizadeh <mohammadr.alizadeh@live.com>",
   "homepage": "https://github.com/fragmentsofthelight/flights#readme",
@@ -36,14 +36,14 @@
     "url": "https://github.com/fragmentsofthelight/flights/issues"
   },
   "dependencies": {
-    "@flights/collection": "^0.1.43",
-    "@flights/core": "^0.1.43",
-    "@flights/data": "^0.1.43",
+    "@flights/collection": "^0.1.44",
+    "@flights/core": "^0.1.44",
+    "@flights/data": "^0.1.44",
     "axios": "^1.7.9"
   },
   "peerDependencies": {
     "react": "^19",
     "vue": "^3"
   },
-  "gitHead": "ea18951f0fd137ba8ea8b11ee4b2a1204a6aecad"
+  "gitHead": "b1e8bc8b54cabc8413ea463d19e2a3cc2bd4bd9c"
 }
