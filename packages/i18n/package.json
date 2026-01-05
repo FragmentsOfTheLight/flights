@@ -1,6 +1,6 @@
 {
   "name": "@flights/i18n",
-  "version": "0.1.51",
+  "version": "0.1.52",
   "description": "flights multilanguage support library",
   "author": "Rasul Alizadeh <mohammadr.alizadeh@live.com>",
   "homepage": "https://github.com/fragmentsofthelight/flights#readme",
@@ -32,9 +32,9 @@
     "url": "https://github.com/fragmentsofthelight/flights/issues"
   },
   "dependencies": {
-    "@flights/core": "^0.1.51",
-    "@flights/data": "^0.1.51",
-    "@flights/storage": "^0.1.51"
+    "@flights/core": "^0.1.52",
+    "@flights/data": "^0.1.52",
+    "@flights/storage": "^0.1.52"
   },
-  "gitHead": "a0a64613f70b834e6cdfc1a42a400048c895e1e9"
+  "gitHead": "d4938d2ed9d347abdf510af3a3202e9e65feb8d7"
 }
