@@ -1,6 +1,6 @@
 {
   "name": "@flights/cache",
-  "version": "0.1.54",
+  "version": "0.1.55",
   "description": "flights caching layer",
   "author": "Rasul Alizadeh <mohammadr.alizadeh@live.com>",
   "homepage": "https://github.com/fragmentsofthelight/flights#readme",
@@ -31,5 +31,5 @@
   "bugs": {
     "url": "https://github.com/fragmentsofthelight/flights/issues"
   },
-  "gitHead": "75b204a78023b4c14adcf3c9ad6907855775ce61"
+  "gitHead": "cfffeb50f9bbcaf62e8e039303e71ee5772027e9"
 }

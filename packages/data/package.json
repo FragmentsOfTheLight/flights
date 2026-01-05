@@ -1,6 +1,6 @@
 {
   "name": "@flights/data",
-  "version": "0.1.54",
+  "version": "0.1.55",
   "description": "flights data serializer, convertor and interpreter",
   "author": "Rasul Alizadeh <mohammadr.alizadeh@live.com>",
   "homepage": "https://github.com/fragmentsofthelight/flights#readme",
@@ -32,8 +32,8 @@
     "url": "https://github.com/fragmentsofthelight/flights/issues"
   },
   "dependencies": {
-    "@flights/core": "^0.1.54",
+    "@flights/core": "^0.1.55",
     "axios": "^1.7.9"
   },
-  "gitHead": "75b204a78023b4c14adcf3c9ad6907855775ce61"
+  "gitHead": "cfffeb50f9bbcaf62e8e039303e71ee5772027e9"
 }
