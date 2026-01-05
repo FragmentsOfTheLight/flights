@@ -1,6 +1,6 @@
 {
   "name": "@flights/storage",
-  "version": "0.1.52",
+  "version": "0.1.53",
   "description": "flights storage operator",
   "author": "Rasul Alizadeh <mohammadr.alizadeh@live.com>",
   "homepage": "https://github.com/fragmentsofthelight/flights#readme",
@@ -32,7 +32,7 @@
     "url": "https://github.com/fragmentsofthelight/flights/issues"
   },
   "dependencies": {
-    "@flights/core": "^0.1.52"
+    "@flights/core": "^0.1.53"
   },
-  "gitHead": "d4938d2ed9d347abdf510af3a3202e9e65feb8d7"
+  "gitHead": "36d127e7396f165c423294a88a50a5ca23d05062"
 }
