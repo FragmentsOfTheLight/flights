@@ -1,6 +1,6 @@
 {
   "name": "@flights/container",
-  "version": "0.1.63",
+  "version": "0.1.64",
   "description": "LightTS dependency injection container",
   "author": "Rasul Alizadeh <mohammadr.alizadeh@live.com>",
   "homepage": "https://github.com/fragmentsofthelight/flights#readme",
@@ -36,11 +36,11 @@
     "url": "https://github.com/fragmentsofthelight/flights/issues"
   },
   "dependencies": {
-    "@flights/core": "^0.1.63"
+    "@flights/core": "^0.1.64"
   },
   "peerDependencies": {
     "react": "^19",
     "vue": "^3"
   },
-  "gitHead": "d04507edf1f509deed7c387db1a3cb82a38f3ed8"
+  "gitHead": "00943a376abceae58f9841296cabed6be6c67ae4"
 }
