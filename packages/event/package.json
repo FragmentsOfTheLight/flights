@@ -1,6 +1,6 @@
 {
   "name": "@flights/event",
-  "version": "0.1.61",
+  "version": "0.1.62",
   "description": "flights event and message bus",
   "author": "Rasul Alizadeh <mohammadr.alizadeh@live.com>",
   "homepage": "https://github.com/fragmentsofthelight/flights#readme",
@@ -32,7 +32,7 @@
     "url": "https://github.com/fragmentsofthelight/flights/issues"
   },
   "dependencies": {
-    "@flights/core": "^0.1.61"
+    "@flights/core": "^0.1.62"
   },
-  "gitHead": "e627fa55bf188f9f35163f06e466c6a9a0ad88cf"
+  "gitHead": "a75dfb0ff796fdccba98cabc16b5832e680e0cd9"
 }
