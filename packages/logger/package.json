@@ -1,6 +1,6 @@
 {
   "name": "@flights/logger",
-  "version": "0.1.64",
+  "version": "0.1.65",
   "description": "flights logger and data collector",
   "author": "Rasul Alizadeh <mohammadr.alizadeh@live.com>",
   "homepage": "https://github.com/fragmentsofthelight/flights#readme",
@@ -31,5 +31,5 @@
   "bugs": {
     "url": "https://github.com/fragmentsofthelight/flights/issues"
   },
-  "gitHead": "00943a376abceae58f9841296cabed6be6c67ae4"
+  "gitHead": "6041412e8a0528bd85558db32242cd9794b4413a"
 }
